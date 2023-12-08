@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-width: 100vw;
+    background: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: 50% 25%;
+}
+
+section {
+    width: 90%;
+    margin: 100px auto;
+    border: 20px solid blue;
+    background: aquamarine;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    padding: 20px;
+    border-bottom: 1px solid;
+    font-family: 'Agbalumo';
+}
+
+.left,
+.right {
+    width: 50%;
+    text-align: center;
+    border: 1px solid mediumspringgreen;
+}
+
+button {
+    padding: 8px 30px;
+    background: rgb(63, 231, 63);
+    color: white;
+    font-size: 20px;
+    border-radius: 15px 15px 15px 15px;
+    border: 1px solid rgb(96, 96, 241);
+    transition: 0.4s;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0 0 4px 4px #fbabac;
+    font-family: 'Agbalumo';
+}
+
+button:hover {
+    border-radius: 20px 20px 20px 20px;
+    background: cornflowerblue;
+    color: black;
+    box-shadow: 0 0 4px 4px green;
+}
+
+#figura {
+    width: 200px;
+    height: 200px;
+    background: mediumorchid;
+    border: 2px solid purple;
+    margin: 40px auto;
+    transition: 0.4S;
+}
+
+#figura.circulo {
+    border-radius: 50%;
+    background: mediumorchid;
+    transform: rotate(360deg);
+    border: solid purple;
+}
+
+#figura.moveTop {
+    transform: translateY(-50px);
+}
+
+#figura.rectangulo {
+    width: 500px;
+}
+
+#figura.rombo {
+    transform: rotate(45deg);
+}
+
+#figura.imagen {
+    background: url(../img/1);
+    background-size: cover;
+}
+
+#figura.gif {
+    background: url(../img/gif.mov);
+    background-size: cover;
+}
+
+#figura.huevo {
+    width: 126px;
+    height: 180px;
+    background-color: #c5aedc;
+    -moz-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    -webkit-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    transition: 0.4s;
+}
+
+#figura.pacMan {
+    width: 0;
+    height: 0;
+    border-right: 50px solid transparent;
+    border-top: 50px solid #c5aedc;
+    border-left: 50px solid #c5aedc;
+    border-bottom: 50px solid #c5aedc;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    background: transparent;
+}
+
+#figura.luna {
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: transparent;
+    -moz-box-shadow: 30px 10px 0 #c5aedc;
+    -webkit-box-shadow: 30px 10px 0 #c5aedc;
+    box-shadow: 30px 10px 0 #c5aedc;
+    background: transparent;
+}
+
+#figura.triangulo {
+    width: 0;
+    height: 0;
+    background: transparent;
+    border-right: 100px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 100px solid transparent;
+    border-bottom: 150px solid #c5aedc;
+}
+
+#figura.hoja {
+    width: 250px;
+    height: 100px;
+    -moz-border-radius: 0 50% / 0 100%;
+    -webkit-border-radius: 0 50% / 0 100%;
+    border-radius: 0 50% / 0 100%;
+    background: #c5aedc;
+    border: 3px solid #c5aedc;
+}
+
+#figura.estrella {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: #c5aedc;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+#figura.pentagono {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: #c5aedc;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+#figura.ranura {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: #c5aedc;
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+}
+
+#figura.hexagono {
+    position: relative;
+    width: 100px;
+    height: 58px;
+    background: #c5aedc;
+    clip-path: polygon(50% 0%, 100% 29%, 100% 86%, 50% 100%, 0% 86%, 0% 29%);
+}
+
+#figura.octogono {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: #c5aedc;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.panel-superior {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    background: greenyellow;
+    text-align: center;
+    padding: 20px;
+    transition: top 1s;
+}
+
+.panel-superior.active {
+    top: 0;
+}
+
+.panel-superior h2 {
+    color: rgb(0, 0, 0);
+}
+
+.panel-superior ul {
+    list-style: none;
+    padding: 0;
+}
+
+.panel-superior li {
+    margin-bottom: 10px;
+}
+
+.panel-superior a {
+    display: block;
+    background: #b083dd;
+    color: white;
+    padding: 8px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.panel-superior a:hover {
+    transform: scale(1.1);
+}
+
+.close {
+    cursor: pointer;
+}
+
+.panel-lateral {
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    background: greenyellow;
+    text-align: center;
+    padding: 20px;
+    transition: left 1s;
+}
+
+.panel-lateral.active {
+    left: 0;
+}
+
+.panel-lateral h2 {
+    color: rgb(0, 0, 0);
+}
+
+.panel-lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.panel-lateral li {
+    margin-bottom: 10px;
+}
+
+.panel-lateral a {
+    display: block;
+    background: #b083dd;
+    color: white;
+    padding: 8px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.panel-lateral a:hover {
+    transform: scale(1.1);
+}
+
+.panel-derecho {
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    background: greenyellow;
+    text-align: center;
+    padding: 20px;
+    transition: right 1s;
+}
+
+.panel-derecho.active {
+    right: 0;
+}
+
+.panel-derecho h2 {
+    color: rgb(0, 0, 0);
+}
+
+.panel-derecho ul {
+    list-style: none;
+    padding: 0;
+}
+
+.panel-derecho li {
+    margin-bottom: 10px;
+}
+
+.panel-derecho a {
+    display: block;
+    background: #b083dd;
+    color: white;
+    padding: 8px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.panel-derecho a:hover {
+    transform: scale(1.1);
+}
+
+.panel-inferior {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: greenyellow;
+    text-align: center;
+    padding: 20px;
+    transition: bottom 1s;
+}
+
+.panel-inferior.active {
+    bottom: 0;
+}
+
+.panel-inferior h2 {
+    color: rgb(0, 0, 0);
+}
+
+.panel-inferior ul {
+    list-style: none;
+    padding: 0;
+}
+
+.panel-inferior li {
+    margin-bottom: 10px;
+}
+
+.panel-inferior a {
+    display: block;
+    background: #b083dd;
+    color: white;
+    padding: 8px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.panel-inferior a:hover {
+    transform: scale(1.1);
+}
+
+#figura.trapecio {
+    width: 250px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+    border-bottom: 100px solid #c5aedc;
+    background: transparent;
+}
+
+#figura.moveLeft {
+    transform: translateX(-50px);
+}
+
+#figura.moveBottom {
+    transform: translateY(50px);
+}
+
+#figura.moveRight {
+    transform: translateX(50px);
+}
